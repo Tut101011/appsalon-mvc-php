@@ -20,7 +20,6 @@ class LoginController {
             if (empty($alertas)) {
                 // Comprobar que exista el usuario
                 $usuario = Usuario::where('email', $auth->email);
-                dbg($usuario);
 
                 if($usuario) {
                     //Verificar el password
