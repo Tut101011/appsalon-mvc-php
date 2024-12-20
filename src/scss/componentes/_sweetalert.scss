@@ -1,0 +1,19 @@
+
+/* Define tus clases personalizadas */
+.swal2-title {
+    font-size: 3.5em; /* Ajusta el tamaño de la fuente del título */
+} 
+
+.swal2-container {
+    .swal2-html-container {
+        font-size: 2.5em; /* Ajusta el tamaño de la fuente del contenido */
+        padding: 1em 0;
+    }
+}
+
+.swal2-icon {
+    font-size: 2em; /* Ajusta el tamaño del icono */
+}
+.swal2-styled.swal2-confirm {
+    font-size: 2em; /* Ajusta el tamaño del texto del botón */
+}

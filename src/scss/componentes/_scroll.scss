@@ -1,0 +1,9 @@
+
+@use 'base/mixins' as m;
+
+body {
+
+    @include m.tablet {
+        height: 100%;
+    }
+}

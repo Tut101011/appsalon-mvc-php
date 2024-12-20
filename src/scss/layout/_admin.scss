@@ -1,0 +1,47 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+
+.citas {
+    list-style: none;
+    padding: 0;
+
+    li {
+        padding: 1rem;
+        border-top: 1px solid v.$blanco;
+
+        p {
+            font-weight: v.$bold;
+            color: v.$azul;
+        }
+
+        span,
+        .servicios {
+            font-weight: v.$regular;
+            color: v.$blanco;
+        }
+    }
+}
+
+.servicios {
+    @extend .citas;    
+
+    .boton-eliminar {
+        margin: 3rem 0 1rem 0;
+    }
+    
+
+    
+    @include m.tablet {
+        .boton,
+        .boton-eliminar {
+            width: auto;
+            margin: 0;
+            padding: 1.5rem 2rem;
+        }
+
+        .acciones {
+            justify-content: space-between;
+        }
+    }
+}
